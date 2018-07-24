@@ -152,6 +152,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Alibaba Java 编程规约" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Alibaba-Java开发规约"><a href="#Alibaba-Java开发规约" class="headerlink" title="Alibaba Java开发规约"></a>Alibaba Java开发规约</h1><h2 id="一、编程规范"><a href="#一、编程规范" class="headerlink" title="一、编程规范"></a>一、编程规范</h2><h3 id="（一）命名风格"><a href="#（一）命名风格" class="headerlink" title="（一）命名风格"></a>（一）命名风格</h3><ol start="6">
+<li>【<strong>强制</strong>】抽象类命名使用Abstract或Base开头；异常类命名使用Exception结尾；测试类命名以它要测试的类的名称开始，以Test结尾。</li>
+<li>【<strong>强制</strong>】POJO类中布尔类型的变量，都不要加is，否则部分框架解析会引起序列化错误。<blockquote>
+<p>反例：定义为基本数据类型Boolean isDeleted；的属性，它的方法也是isDeleted()，RPC框架在反向解析的时候，“以为”对应的属性名称是deleted，导致属性获取不到，进而抛出异常。</p>
+</blockquote>
+</li>
+<li>包名统一使用单数形式，类名可以使用复试形式</li>
+<li>在接口类中方法和属性无需修饰符，并加上javadoc注释；尽量不要在接口中定义变量<blockquote>
+<p>说明：JDK8中接口允许有默认实现，那么这个default方法，是对所有实现类都有价值的默认实现。</p>
+<ol start="16">
+<li>【参考】各层命名规约：<br>A) Service/DAO层方法命名规约<br> 1） 获取单个对象的方法用get做前缀。<br> <strong>2） 获取多个对象的方法用list做前缀。</strong><br> <strong>3） 获取统计值的方法用count做前缀。</strong><br> 4） 插入的方法用save/insert做前缀。<br> 5） 删除的方法用remove/delete做前缀。<br> 6） 修改的方法用update做前缀。<br>B) 领域模型命名规约 <pre><code>1） 数据对象：xxxDO，xxx即为数据表名。 
+</code></pre> <strong>2） 数据传输对象：xxxDTO，xxx为业务领域相关的名称。</strong><br> 3） 展示对象：xxxVO，xxx一般为网页名称。<br> <strong>4） POJO是DO/DTO/BO/VO的统称，禁止命名成xxxPOJO。</strong></li>
+</ol>
+</blockquote>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/24/Alibaba Java 编程规约/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-上班第三天" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
